@@ -1,0 +1,88 @@
+{
+  "materialColor": "#ffffff",
+  "specularColor": "#e1d6d6",
+  "shininess": 73.26581310911523,
+  "reflectivity": 0,
+  "ambientLightColor": 407823,
+  "ambientLightIntensity": 3.8410089814637876,
+  "directionalLightColor": 10769954,
+  "directionalLightIntensity": 6.8077900084674,
+  "directionalLightX": 1.1183870411855938,
+  "directionalLightY": -10,
+  "directionalLightZ": -10,
+  "directionalLight2X": 3.985869377907978,
+  "directionalLight2Y": -8.145786662071343,
+  "directionalLight2Z": 3.5447182491814573,
+  "lights": [
+    {
+      "position": [
+        1.1183870411855938,
+        1,
+        1
+      ]
+    },
+    {
+      "position": [
+        3.985869377907978,
+        -8.145786662071343,
+        3.5447182491814573
+      ]
+    }
+  ],
+  "models": [
+    {
+      "position": [
+        -10,
+        -3.819591261451727,
+        0.6906272022551097
+      ],
+      "rotation": [
+        -0.3416069213191726,
+        1.6679729391194469,
+        0.35135165124586853,
+        "XYZ"
+      ],
+      "scale": [
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "position": [
+        -10,
+        -8,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        "XYZ"
+      ],
+      "scale": [
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "position": [
+        0.2360847837325526,
+        0.015509219369292282,
+        1.3389626055488542
+      ],
+      "rotation": [
+        -1.7968199237057596,
+        -3.141592653589793,
+        -1.5889323519362473,
+        "XYZ"
+      ],
+      "scale": [
+        7.65466138204377,
+        7.713178294573644,
+        7.8259337561663145
+      ]
+    }
+  ]
+}
