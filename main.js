@@ -18,7 +18,9 @@ const params = {
   ambientLightColor: 0xd86148,
   ambientLightIntensity: 1.44,
   directionalLightColor: 0x60d15d,
+  directionalLight2Color: 0xff0000,
   directionalLightIntensity: 3,
+  directionalLight2Intensity: 3,
   directionalLightX: 1,
   directionalLightY: 1,
   directionalLightZ: 1,
@@ -59,7 +61,7 @@ const ambientLight = new THREE.AmbientLight(params.ambientLightColor, params.amb
 const directionalLight = new THREE.DirectionalLight(params.directionalLightColor, params.directionalLightIntensity);
 directionalLight.position.set(params.directionalLightX, params.directionalLightY, params.directionalLightZ);
 directionalLight.castShadow = true;
-const directionalLight2 = new THREE.DirectionalLight(params.directionalLightColor, params.directionalLightIntensity);
+const directionalLight2 = new THREE.DirectionalLight(params.directionalLight2Color, params.directionalLightIntensity2);
 directionalLight2.position.set(params.directionalLight2X, params.directionalLight2Y, params.directionalLight2Z);
 directionalLight2.castShadow = true;
 
@@ -206,11 +208,17 @@ gui.add(params, 'ambientLightIntensity', 0, 10).onChange(value => {
 
 // Directional Light Controls
 gui.addColor(params, 'directionalLightColor').onChange(value => {
-  directionalLight.color.set(value);
+  
+  directionalLight.color.set(value); // Assuming both directional lights should have the same color
+});gui.addColor(params, 'directionalLight2Color').onChange(value => {
+  
   directionalLight2.color.set(value); // Assuming both directional lights should have the same color
 });
 gui.add(params, 'directionalLightIntensity', 0, 10).onChange(value => {
   directionalLight.intensity = value;
+});
+gui.add(params, 'directionalLight2Intensity', 0, 10).onChange(value => {
+ 
   directionalLight2.intensity = value;
 });
 
@@ -314,7 +322,9 @@ function saveSettings() {
     ambientLightColor: params.ambientLightColor,
     ambientLightIntensity: params.ambientLightIntensity,
     directionalLightColor: params.directionalLightColor,
+    directional2LightColor: params.directional2LightColor,
     directionalLightIntensity: params.directionalLightIntensity,
+    directionalLightIntensity2: params.directionalLightIntensity2,
     directionalLightX: params.directionalLightX,
     directionalLightY: params.directionalLightY,
     directionalLightZ: params.directionalLightZ,
