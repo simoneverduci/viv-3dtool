@@ -77,7 +77,7 @@ const gradientTexture = textureLoader.load("./texture3.jpg");
 const normalTexture = textureLoader.load('./3.jpeg'); // Replace with your normal map file
 normalTexture.wrapS = THREE.RepeatWrapping;
 normalTexture.wrapT = THREE.RepeatWrapping;
-normalTexture.repeat.set(50, 50); // Repeat the texture 4 times on each axis
+normalTexture.repeat.set(30, 30); // Repeat the texture 4 times on each axis
 
 gradientTexture.magFilter = THREE.NearestFilter;
 const mainMat = new THREE.MeshPhongMaterial({
